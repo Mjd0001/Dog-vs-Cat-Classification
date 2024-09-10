@@ -12,6 +12,8 @@ This project implements a neural network model that classifies images as either 
 - Pillow
 - opencv-python
 - matplotlib
+
+  
 Install the required dependencies:
 
 ```

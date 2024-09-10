@@ -59,26 +59,30 @@ with ZipFile('/content/train.zip', 'r') as zip:
     print('Training images extracted successfully!')
 ```
 ## 📈 Project Workflow
-1. Image Preprocessing
-Resizing: Resize all images to 224x224 pixels to match the input size required by MobileNet.
-Scaling: Normalize the pixel values to a range of 0-1 by dividing by 255.
-2. Labeling Images
-Assign 0 for cat images and 1 for dog images.
-Store these labels in a list for later use.
-3. Splitting the Dataset
-Split the dataset into training and testing sets using an 80-20 ratio with the train_test_split function from Scikit-learn.
-4. Model Architecture
-The model uses MobileNetV2 as a feature extractor, which is pre-trained on ImageNet.
-A final dense layer with 2 output units (for cats and dogs) is added to predict the class of the image.
-5. Model Training and Evaluation
-The model is trained for 5 epochs using the Adam optimizer and Sparse Categorical Crossentropy loss function.
-Evaluate the model on the test set to calculate the accuracy.
-6. Predictive System
-You can input an image of a dog or cat, and the model will classify the image and output whether it represents a cat or a dog.
+1. Image Preprocessing<br>
+Resizing: Resize all images to 224x224 pixels to match the input size required by MobileNet.<br>
+Scaling: Normalize the pixel values to a range of 0-1 by dividing by 255.<br>
+3. Labeling Images<br>
+Assign 0 for cat images and 1 for dog images.<br>
+Store these labels in a list for later use.<br>
+4. Splitting the Dataset<br>
+Split the dataset into training and testing sets using an 80-20 ratio with the train_test_split function from Scikit-learn.<br>
+5. Model Architecture<br>
+The model uses MobileNetV2 as a feature extractor, which is pre-trained on ImageNet.<br>
+A final dense layer with 2 output units (for cats and dogs) is added to predict the class of the image.<br>
+6. Model Training and Evaluation<br>
+The model is trained for 5 epochs using the Adam optimizer and Sparse Categorical Crossentropy loss function.<br>
+Evaluate the model on the test set to calculate the accuracy.<br>
+7. Predictive System<br>
+You can input an image of a dog or cat, and the model will classify the image and output whether it represents a cat or a dog.<br>
 
 ## Model
-Architecture: MobileNetV2 pre-trained on ImageNet.
-Framework: TensorFlow and TensorFlow Hub.
+
+
+Architecture: MobileNetV2 pre-trained on ImageNet.<br>
+
+
+Framework: TensorFlow and TensorFlow Hub.<br>
 
 ## 🔗 Useful Links
 [Kaggle API Documentation](https://www.kaggle.com/docs/api)
